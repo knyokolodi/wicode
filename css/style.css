@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+}
+.navbar-nav li a{
+    text-transform: uppercase;
+    color: #fff!important;
+    font-weight: 600;
+    float: right;
+    text-align: right;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    padding: 0!important;
+}
+.navbar-brand img{
+    height: 60px;
+    padding-left: 20px;
+}
+.fa-bars{
+    color: #fff;
+    font-size: 30px!important;
+}
+.navbar-toggler{
+    outline: none!important;
+}
+.navbar-toggler{
+    border: none!important;
+}
+.title{
+    text-transform: uppercase;
+    padding-bottom: 80px;
+}
+/*--------------Banner Section -----------------------*/
+#banner{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: #fff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#banner a{
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 20px;  
+}
+.promo-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.fa-play-circle{
+    font-size: 50px;
+    margin: 20px;
+    vertical-align: middle;
+}
+
+/*---------------Services Section-----------------------*/
+#services{
+    padding: 80px 0;
+}
+#services .fas{
+    font-size: 2.5rem;
+    color: #5f1782;
+    margin-bottom: 20px;
+}
+#services h3{
+    padding-top: 20px;
+    margin: 5px;
+    text-transform: uppercase;
+}
+.title::before{
+    content: '';
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+#services .col-md-4{
+    padding-bottom: 20px;
+}
+#services .btn-primary{
+    box-shadow: none;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+#services .btn-primary:hover{
+    border: 1px solid #5f1782;
+    background: #fff;
+    color: #5f1782;
+}
+
+/*---------------About us section------------------*/
+#about-us{
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+#about-us h3{
+    padding-top: 20px;
+    margin: 5px;
+}
+#about-us ul{
+    margin-left: 25px;
+}
+#about-us ul li{
+    margin: 10px 0;
+}
+/*----------------Testimonials section---------------*/
+#testimonials{
+    margin: 80px 0;
+}
+.testimonials{
+    border-left: 4px solid #7b1798;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testimonials img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.user-details{
+    display: inline-block;
+
+}
+/*----------------Footer section-----------------------*/
+#footer{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color:#fff;
+    padding: 60px 0 40px 0;
+}
+.footer-box{
+    padding: 20px;
+}
+.footer-box img{
+    width: 120px;
+    margin-bottom: 20px;
+}
+.footer-box .fas{
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+.footer-box .form-control{
+    border: none!important;
+    margin-top: 25px;
+    max-width: 250px;
+
+}
+.footer-box .btn-primary{
+    box-shadow: none;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+hr{
+    background-color: #fff;
+}
