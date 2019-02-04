@@ -140,6 +140,19 @@ body{
     display: inline-block;
 
 }
+/*----------------Social Media section-----------------------*/
+
+#social-media
+{
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+#social-media
+{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
 /*----------------Footer section-----------------------*/
 #footer{
     background-image: linear-gradient(to right, #a517ba, #5f1782);
