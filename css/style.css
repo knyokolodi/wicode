@@ -192,6 +192,19 @@ body{
 hr{
     background-color: #fff;
 }
+
+#services .btn-text{
+    box-shadow: none;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+#services .btn-text:hover{
+    border: 1px solid #5f1782;
+    background: #fff;
+    color: #5f1782;
+}
 .btn-text b{display:inline}
 .btn-text:not(.collapsed)  span{display:none}
 .btn-text.collapsed b {display:none}
