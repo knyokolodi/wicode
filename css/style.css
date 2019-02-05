@@ -196,3 +196,8 @@ hr{
 .btn-text b{display:inline}
 .btn-text:not(.collapsed)  span{display:none}
 .btn-text.collapsed b {display:none}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+    transition: 0.3s;
+    border-radius:5px;
+}
