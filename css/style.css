@@ -114,6 +114,7 @@ body{
     background: #f8f9fa;
     padding: 80px 0;
 }
+
 #about-us h3{
     padding-top: 20px;
     margin: 5px;
@@ -124,15 +125,22 @@ body{
 #about-us ul li{
     margin: 10px 0;
 }
+
+/*----------------meet the awesome section---------------*/
+#awesome-team{
+    padding: 80px 0;
+    background: #fff;
+    padding: 60px 0 40px 0;
+}
+
 /*----------------Testimonials section---------------*/
 #testimonials{
     background: #f8f9fa;
-    margin: 80px 0;
     padding: 60px 0 40px 0;
 }
 .testimonials{
     border-left: 4px solid #7b1798;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
 }
 .testimonials img{
@@ -147,11 +155,12 @@ body{
 }
 /*----------------Social Media section-----------------------*/
 
-#social-media
-{
-    padding: 50px 0 100px 0;
-
-}
+    #social-media{
+        padding: 80px 0;
+        background: #fff;
+        padding: 60px 0 40px 0;
+    }
+    
 
 #social-media p
 {
@@ -218,7 +227,6 @@ hr{
 }
 .card{
     border: none!important;
-
 }
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -236,7 +244,7 @@ hr{
   min-width: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-
+  margin: 35px 0;
 }
 
 /* Links inside the dropdown */
@@ -258,18 +266,19 @@ hr{
 /* Meet the team*/
 
 #team{
-    padding: 60px 0 40px 0;
+    padding: 0px 0 10px 0;
 }
 
 .team-member, .team-member .team-img {
     position: relative;
+    width: 100%;
+    height: auto;
 }
 .team-member {
     overflow: hidden;
 }
 .team-member, .team-member .team-img {
     position: relative;
-    transform: translateY(-20px)
 }
 
 .team-hover {
@@ -337,10 +346,19 @@ hr{
     font-size: 16px;
 }
 .team-title {
-    padding: 0% 0;
+    margin: 20px 0;
     display: inline-block;
     letter-spacing: 2px;
     width: 100%;
-    transform: translateY(-10px)
 }
+.team-title h5 {
+    margin-bottom: 0px;
+    display: block;
+    text-transform: uppercase;
+}
+.team-title span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    letter-spacing: 1px;
 }
