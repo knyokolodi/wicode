@@ -8,38 +8,6 @@ body{
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.2rem;
 }
-/* responsive text queries */
-@media screen and (max-width: 992px) {
-    p,.btn,input,div,span,h4 {
-      font-size: 95%;
-    }
-    h1 {
-      font-size: 24px;  
-    }
-    h2 {
-      font-size: 22px;  
-    }
-    h3 {
-      font-size: 18px;  
-    }
-    
-  }
-  
-  @media screen and (max-width: 768px) {
-    p,.btn,input,div,span,h4 {
-      font-size: 90%;
-    }
-    h1 {
-      font-size: 20px;  
-    }
-    h2 {
-      font-size: 18px;  
-    }
-    h3 {
-      font-size: 16px;  
-    }
-  
-  }
 .navbar-nav li a{
     text-transform: uppercase;
     color: #fff!important;
@@ -384,3 +352,23 @@ hr{
     color: #a5a5a5;
     letter-spacing: 1px;
 }
+
+/* responsive text queries */
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;  
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    .title::before{
+        content: '';
+        height: 5px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(40px);
+        background-image: linear-gradient(to right, #a517ba, #5f1782);
+    }
+  }
