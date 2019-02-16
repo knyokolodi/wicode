@@ -2,26 +2,6 @@
 <html lang="en">
 
 <head>
-  <style>
-
-    @media (min-width: 544px) {  
-  h1 {font-size:8vw;} /*1rem = 16px*/
- 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-  h1 {font-size:8vw;} /*1rem = 16px*/
-}
- 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  h1 {font-size:2.5rem;} /*1rem = 16px*/
-}
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-  h1 {font-size:3rem;} /*1rem = 16px*/    
-}
-        </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -29,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="icon" type="image/ico" href="images/icon.gif" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
@@ -61,18 +42,12 @@
             </a>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#about-us" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">
               about us
             </a>
-
-            <div class="dropdown-content">
-              <a href="#awesome-team">Meet the awesome team</a>
-            </div 
-            </li> 
-            
-            <li class="nav-item">
+          </li> 
+          <li class="nav-item">
             <a class="nav-link" href="#testimonials">testimonials</a>
           </li>
 
@@ -228,72 +203,83 @@
   <!--------Meet the Awesome Team---->
 
   <section id="awesome-team">
-    <div class="container">
-      <h1 class="title text-center">Our professionals</h1>
-      <div class="row">
-        <div class="col-md-4 col-sm-4 ">
-          <div class="team-member">
-            <div class="team-img">
-              <img src="images/kagiso CEO.jpg" alt="team member" class="img-responsive">
-            </div>
-            <div class="team-hover">
-              <div class="desk">
-                <h4>Hi There !</h4>
-                <p>I've been a software engineer, a novelist, a journalist, and a manager - and managing developers is
-                  easily the trickiest thing I've ever done.
-                </p>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 col-sm-12 heading-title text-center">
+                  <h1 class="title text-center">our professionals</h1>
+                  <p class="p-top-30 half-txt">Our awesome multi talent team of specialists</p>
               </div>
 
-            </div>
-          </div>
-          <div class="team-title text-center">
-            <h5>Kagiso Nyokolodi</h5>
-            <span>Lead Developer </span>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-4">
-          <div class="team-member">
-            <div class="team-img">
-              <img src="images/Letlhogonolo.jpg" alt="team member" class="img-responsive">
-            </div>
-            <div class="team-hover">
-              <div class="desk">
-                <p>“You are a computer. If you become front-end you'll count the likes on social media. If you become
-                  back-end you'll be breathing deep on a mountain. Listen! one life man. Become a Full-stack.”</p>
-
+              <div class="col-md-4 col-sm-4">
+                  <div class="team-member">
+                      <div class="team-img">
+                          <img src="https://lh3.googleusercontent.com/1pk9QCaCAG1Ft4SJU0zckQOeVKbEiEHi7_h8SlTyfgghy9YtbacJUWOo71ZFWxBWnh2iNmfwKibAhamKD08Q2vMH1TKwo38uA0Z_MWTzFSTpw5I9JsKmN0EReUYNKDbQre1s6o6CsG-A_IMyOC3s8I3kdt88duzDmWaCnZk0TyqWwhUzmvCub-R7VUD0AMyyGlhc546cSfOZLul4Nhjqa9SvI6ODvXffZsSVlymJw_n5AP6gxPfAeraGADmQcaTba84OoiTcscTIbT-BYPvJpcM4RdAV5bnueM3tR30mUiOY0n8iagpoURWq3gyfd13kr0YHqlz7_P8LD4HdXB4GWocZo5sitGyIVHj9t0DbLDw1WDh5WIN7wWoFEomMLjiENhBo_Tn6VghImngf8MuOGeIr9Hsu_2xkDiPiGs42xJ6oFvdIp1XSnYBMgtPLIyLSjFv3-STeO7P1gCZfKS_YOvQxRvR59CG5kHWDJ06h8tDR5HKzhAoMjyJ55c4WMhsIetcfxCfvWpl87kId8_cr5ToFOafqYt2RZXmufUdY1gISSlARDV_HFlrh7VnYrMqEo87_mKKdWXBMdjRboPgMoAhDaTcq6lKNP5ICFzXh9rNGBipdVU_2FhSbeGlHQkGVazGS0j_qcOlGNAaL1hQeWeANEbgePas=w480-h481-no" alt="team member" class="img-responsive">
+                      </div>
+                      <div class="team-hover">
+                          <div class="desk">
+                              <h4>Hi There !</h4>
+                              <p>I love to introduce myself as a hardcore Web Designer.</p>
+                          </div>
+                          <div class="s-link">
+                              <a href="#"><i class="fa fa-facebook"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-google-plus"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="team-title">
+                      <h5>NYOKOLODI KAGISO</h5>
+                      <span>Lead Developer &amp; Ceo</span>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                  <div class="team-member">
+                      <div class="team-img">
+                          <img src="https://lh3.googleusercontent.com/1pk9QCaCAG1Ft4SJU0zckQOeVKbEiEHi7_h8SlTyfgghy9YtbacJUWOo71ZFWxBWnh2iNmfwKibAhamKD08Q2vMH1TKwo38uA0Z_MWTzFSTpw5I9JsKmN0EReUYNKDbQre1s6o6CsG-A_IMyOC3s8I3kdt88duzDmWaCnZk0TyqWwhUzmvCub-R7VUD0AMyyGlhc546cSfOZLul4Nhjqa9SvI6ODvXffZsSVlymJw_n5AP6gxPfAeraGADmQcaTba84OoiTcscTIbT-BYPvJpcM4RdAV5bnueM3tR30mUiOY0n8iagpoURWq3gyfd13kr0YHqlz7_P8LD4HdXB4GWocZo5sitGyIVHj9t0DbLDw1WDh5WIN7wWoFEomMLjiENhBo_Tn6VghImngf8MuOGeIr9Hsu_2xkDiPiGs42xJ6oFvdIp1XSnYBMgtPLIyLSjFv3-STeO7P1gCZfKS_YOvQxRvR59CG5kHWDJ06h8tDR5HKzhAoMjyJ55c4WMhsIetcfxCfvWpl87kId8_cr5ToFOafqYt2RZXmufUdY1gISSlARDV_HFlrh7VnYrMqEo87_mKKdWXBMdjRboPgMoAhDaTcq6lKNP5ICFzXh9rNGBipdVU_2FhSbeGlHQkGVazGS0j_qcOlGNAaL1hQeWeANEbgePas=w480-h481-no" alt="team member" class="img-responsive">
+                      </div>
+                      <div class="team-hover">
+                          <div class="desk">
+                              <h4>Hello World</h4>
+                              <p>I love to introduce myself as a hardcore Web Designer.</p>
+                          </div>
+                          <div class="s-link">
+                              <a href="#"><i class="fa fa-facebook"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-google-plus"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="team-title">
+                      <h5>LETLHOGONOLO MOKOENA</h5>
+                      <span>Senior Developer</span>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                  <div class="team-member">
+                      <div class="team-img">
+                          <img src="https://lh3.googleusercontent.com/1pk9QCaCAG1Ft4SJU0zckQOeVKbEiEHi7_h8SlTyfgghy9YtbacJUWOo71ZFWxBWnh2iNmfwKibAhamKD08Q2vMH1TKwo38uA0Z_MWTzFSTpw5I9JsKmN0EReUYNKDbQre1s6o6CsG-A_IMyOC3s8I3kdt88duzDmWaCnZk0TyqWwhUzmvCub-R7VUD0AMyyGlhc546cSfOZLul4Nhjqa9SvI6ODvXffZsSVlymJw_n5AP6gxPfAeraGADmQcaTba84OoiTcscTIbT-BYPvJpcM4RdAV5bnueM3tR30mUiOY0n8iagpoURWq3gyfd13kr0YHqlz7_P8LD4HdXB4GWocZo5sitGyIVHj9t0DbLDw1WDh5WIN7wWoFEomMLjiENhBo_Tn6VghImngf8MuOGeIr9Hsu_2xkDiPiGs42xJ6oFvdIp1XSnYBMgtPLIyLSjFv3-STeO7P1gCZfKS_YOvQxRvR59CG5kHWDJ06h8tDR5HKzhAoMjyJ55c4WMhsIetcfxCfvWpl87kId8_cr5ToFOafqYt2RZXmufUdY1gISSlARDV_HFlrh7VnYrMqEo87_mKKdWXBMdjRboPgMoAhDaTcq6lKNP5ICFzXh9rNGBipdVU_2FhSbeGlHQkGVazGS0j_qcOlGNAaL1hQeWeANEbgePas=w480-h481-no" alt="team member" class="img-responsive">
+                      </div>
+                      <div class="team-hover">
+                          <div class="desk">
+                              <h4>I love to design</h4>
+                              <p>I love to introduce myself as a hardcore Web Designer.</p>
+                          </div>
+                          <div class="s-link">
+                              <a href="#"><i class="fa fa-facebook"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-google-plus"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="team-title">
+                      <h5>MELVIN MORE</h5>
+                      <span>Senior Developer</span>
+                  </div>
               </div>
 
-            </div>
           </div>
-          <div class="team-title text-center">
-            <h5>Letlhogonolo Mokoena</h5>
-            <span>Senior Developer </span>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-4">
-          <div class="team-member">
-            <div class="team-img">
-              <img src="images/melvin.jpg" alt="team member" class="img-responsive">
-            </div>
-            <div class="team-hover">
-              <div class="desk">
-                <h4>I love PHP</h4>
-                <p>PHP is about as exciting as your toothbrush. You use it every day, it does the job, it is a simple
-                  tool, so what? Who would want to read about toothbrushes?</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="team-title text-center">
-            <h5>Melvin More</h5>
-            <span>Senior Developer </span>
-          </div>
-        </div>
 
       </div>
-    </div>
   </section>
 
   <!--testimonials section-->
