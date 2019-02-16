@@ -20,9 +20,16 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
+  <!--Preloader-->
+  <div id="overlayer"></div>
+  <span class="loader">
+    <span class="loader-inner"></span>
+  </span>
+  <!--Navigation bar-->
   <section id="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#"><img src="images/logo.gif" alt="Wicode software developement company" srcset=""></a>
@@ -305,7 +312,13 @@
     </div>
   </footer>
 </body>
-
+<!--Preloader -->
+<script type="text/javascript">
+  $(window).on('load', function() {
+    $(".loader").delay(2000).fadeOut("slow");
+    $("#overlayer").delay(2000).fadeOut("slow");
+})
+</script>
 <!---------Smooth Scroll---------------->
 <script src="smooth-scroll.js"></script>
 <script>
