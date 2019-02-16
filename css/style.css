@@ -77,12 +77,10 @@ body{
 #services .fas{
     font-size: 2.5rem;
     color: #5f1782;
-    margin-bottom: 20px;
 }
-#services h3{
-    padding-top: 20px;
-    margin: 5px;
+#services h5{
     text-transform: uppercase;
+    color: #7e7e7e;
 }
 .title::before{
     content: '';
@@ -228,10 +226,6 @@ hr{
 .shadow-md{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),0 2px 4px 0 rgba(0,0,0,0.08);
 }
-.card{
-    border: none!important;
-}
-
 /* Meet the team*/
 .heading-title {
     margin-bottom: 100px;
@@ -270,6 +264,8 @@ hr{
 .team-img img{
     width: 100%!important;
     height: auto!important;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 .team-hover {
     position: absolute;
