@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>WiCode | Software Development Company 2019</title>
+  <title>WiCode | Software Development Company</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -14,6 +14,13 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
     crossorigin="anonymous">
+    <!---- Animation css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!---- wow animation-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -21,17 +28,55 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <!--Preloader --https://github.com/knyokolodi/wicode.git--->
+  <!--Preloader -->
 <script type="text/javascript">
   $(window).on('load', function() {
     $(".loader").delay(2000).fadeOut("slow");
     $("#overlayer").delay(2000).fadeOut("slow");
 })
+
+</script>
+
+<script>
+    AOS.init();
+  </script>
+
+<!---- wow animation-->
+
+<script>
+  var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+    resetAnimation: true,     // reset animation on end (default is true)
+
+    
+  }
+  
+);
+window.addEventListener('scroll', function(e) {
+        if( $(window).scrollTop() <= 50) {
+            $('.wow').removeClass('animated');
+            $('.wow').removeAttr('style');
+            new WOW().init();
+        }
+});
+wow.init();
+
+
 </script>
 </head>
 
 <body>
-  <!--Preloader--->
+  <!--Preloader-->
   <div id="overlayer"></div>
   <span class="loader">
     <span class="loader-inner"></span>
@@ -73,12 +118,12 @@
 
     </nav>
   </section>
-  <!--Bannerr Section_--->
+  <!--Banner Section_--->
   <section id="banner">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <p class="text-uppercase promo-title">software applications company</p>
+        <div class="col-md-6 " >
+          <p class="text-uppercase promo-title wow bounce">software applications company</p>
           <p>WiCode from web to mobile applications, we are the experts. Software solutions at your fingetips</p>
           <a href="#"><i class="far fa-play-circle"></i><span>View Recent Projects</span></a>
         </div>
@@ -100,13 +145,13 @@
     </div>
   </section>
 
-  <!---Service Section-->
+  <!--Service Section--->
   <section id="services">
     <div class="container text-center">
-      <h1 class="text-uppercase title">what we do</h1>
-      <div class="row">
+      <h1 class="text-uppercase title  wow bounceInDown">what we do</h1>
+      <div class="row ">
         <div class="col-md-4">
-          <div class="card">
+          <div class="card wow rotateInDownLeft">
             <div class="card-body">
                 <i class="pb-3 fas fa-code fa-3x"></i>
                 <h5 class="card-title">Web Design & Development</h5>
@@ -118,7 +163,7 @@
           </div>
         </div>
         <div class="col-md-4">
-            <div class="card">
+            <div class="card wow rotateInDownLeft">
               <div class="card-body">
                   <i class="pb-3 fas fa-vr-cardboard"></i>
                   <h5 class="card-title">AR & VR Development</h5>
@@ -131,7 +176,7 @@
             </div>
           </div>
           <div class="col-md-4">
-              <div class="card">
+              <div class="card wow rotateInDownLeft">
                 <div class="card-body">
                     <i class="pb-3 fas fa-gamepad"></i>
                     <h5 class="card-title">Games Development</h5>
@@ -149,7 +194,7 @@
   <!--About us-->
   <section id="about-us">
     <div class="container">
-      <h1 class="title text-center">why choose us</h1>
+      <h1 class="title text-center wow bounceInUp">why choose us</h1>
       <div class="row">
         <div class="col-md-6 about-us">
           <h3 class="about-title">Why we're different</h3>
@@ -176,13 +221,13 @@
       <div class="container">
           <div class="row">
               <div class="col-md-12 col-sm-12 heading-title text-center">
-                  <h1 class="title text-center">our professionals</h1>
+                  <h1 class="title text-center wow bounceInUp">our professionals</h1>
                   <p class="half-txt">Our awesome multi talent team of specialists</p>
               </div>
 
               <div class="col-md-4 col-sm-4">
-                  <div class="team-member">
-                      <div class="team-img">
+                  <div class="team-member ">
+                      <div class="team-img wow fadeInUp slower">
                           <img src="https://lh3.googleusercontent.com/1pk9QCaCAG1Ft4SJU0zckQOeVKbEiEHi7_h8SlTyfgghy9YtbacJUWOo71ZFWxBWnh2iNmfwKibAhamKD08Q2vMH1TKwo38uA0Z_MWTzFSTpw5I9JsKmN0EReUYNKDbQre1s6o6CsG-A_IMyOC3s8I3kdt88duzDmWaCnZk0TyqWwhUzmvCub-R7VUD0AMyyGlhc546cSfOZLul4Nhjqa9SvI6ODvXffZsSVlymJw_n5AP6gxPfAeraGADmQcaTba84OoiTcscTIbT-BYPvJpcM4RdAV5bnueM3tR30mUiOY0n8iagpoURWq3gyfd13kr0YHqlz7_P8LD4HdXB4GWocZo5sitGyIVHj9t0DbLDw1WDh5WIN7wWoFEomMLjiENhBo_Tn6VghImngf8MuOGeIr9Hsu_2xkDiPiGs42xJ6oFvdIp1XSnYBMgtPLIyLSjFv3-STeO7P1gCZfKS_YOvQxRvR59CG5kHWDJ06h8tDR5HKzhAoMjyJ55c4WMhsIetcfxCfvWpl87kId8_cr5ToFOafqYt2RZXmufUdY1gISSlARDV_HFlrh7VnYrMqEo87_mKKdWXBMdjRboPgMoAhDaTcq6lKNP5ICFzXh9rNGBipdVU_2FhSbeGlHQkGVazGS0j_qcOlGNAaL1hQeWeANEbgePas=w480-h481-no" alt="team member" class="img-responsive">
                       </div>
                       <div class="team-hover">
@@ -203,7 +248,7 @@
                   </div>
               </div>
               <div class="col-md-4 col-sm-4">
-                  <div class="team-member">
+                  <div class="team-member wow fadeInUp">
                       <div class="team-img">
                           <img src="https://lh3.googleusercontent.com/tLhT-ZbiTLnpUiwNwooq3R6MjSrZDYTTgzGEgYkqvkVZeCJYQZjIfAPDYtDHB8HKML_5GgOnSXjjhF-6dfLPbHj5lMGdhFNKF-NouqjwwcGFINMfKFXDfOEOdc3z9rIINxF4TykYmw=w2400" alt="team member" class="img-responsive">
                       </div>
@@ -225,7 +270,7 @@
                   </div>
               </div>
               <div class="col-md-4 col-sm-4">
-                  <div class="team-member">
+                  <div class="team-member wow fadeInUp slower">
                       <div class="team-img">
                           <img src="https://lh5.googleusercontent.com/HMQKxe5EHoeI6KcSBGGebqqY_fzq909ara3YYxkJo5Zh_9sUnKOXCiazczA=w2400" alt="Wicode software developemt, web development" class="img-responsive">
                       </div>
@@ -255,7 +300,7 @@
   <!--testimonials section-->
   <section id="testimonials">
     <div class="container">
-      <h1 class="title text-center">what clients say</h1>
+      <h1 class="title text-center wow bounceInUp">what clients say</h1>
       <div class="row">
         <div class="col-md-6 testimonials">
           <p>I’ve had some questionable experiences with other web agencies in the past, but Wicode has hands down been
@@ -285,9 +330,9 @@
     <div class="container text-center title">
       <h1>FIND US ON SOCIAL MEDIA</h1>
       <div class="social-icons">
-        <a href="#"> <img src="images/social media icons/facebook-icons.png"></a>
-        <a href="#"> <img src="images/social media icons/linkedin-icons.png"></a>
-        <a href="#"> <img src="images/social media icons/google-icons.png"></a>
+        <a href="#"> <img class="wow zoomIn" src="images/social media icons/facebook-icons.png"></a>
+        <a href="#"> <img class= "wow zoomIn" src="images/social media icons/linkedin-icons.png"></a>
+        <a href="#"> <img class= "wow zoomIn" src="images/social media icons/google-icons.png"></a>
       </div>
     </div>
   </section>
