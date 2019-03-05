@@ -417,6 +417,18 @@ hr{
     color: #a5a5a5;
     letter-spacing: 1px;
 }
+.social-icons .fab{
+    color: #fff;
+    margin-right: 8px;
+    margin-top: 50px;
+    font-size: 45px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
 
 /* responsive text queries */
 @media screen and (max-width: 768px) {
