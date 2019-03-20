@@ -2,26 +2,6 @@
 <html lang="en">
 
 <head>
-  <style>
-
-    @media (min-width: 544px) {  
-  h1 {font-size:8vw;} /*1rem = 16px*/
- 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-  h1 {font-size:8vw;} /*1rem = 16px*/
-}
- 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  h1 {font-size:2.5rem;} /*1rem = 16px*/
-}
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-  h1 {font-size:3rem;} /*1rem = 16px*/    
-}
-        </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -29,19 +9,44 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="icon" type="image/ico" href="images/icon.gif" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
     crossorigin="anonymous">
+    <!---- Animation css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!---- wow animation-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!--Preloader -->
+<script type="text/javascript">
+  $(window).on('load', function() {
+    $(".loader").delay(2000).fadeOut("slow");
+    $("#overlayer").delay(2000).fadeOut("slow");
+})
+
+</script>
+
+<script src="./js/wow.js"></script>
 </head>
 
 <body>
+  <!--Preloader-->
+  <div id="overlayer"></div>
+  <span class="loader">
+    <span class="loader-inner"></span>
+  </span>
+  <!--Navigation bar-->
   <section id="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#"><img src="images/logo.gif" alt="Wicode software developement company" srcset=""></a>
@@ -61,18 +66,12 @@
             </a>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#about-us" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">
               about us
             </a>
-
-            <div class="dropdown-content">
-              <a href="#awesome-team">Meet the awesome team</a>
-            </div 
-            </li> 
-            
-            <li class="nav-item">
+          </li> 
+          <li class="nav-item">
             <a class="nav-link" href="#testimonials">testimonials</a>
           </li>
 
@@ -84,12 +83,12 @@
 
     </nav>
   </section>
-  <!--Banner Section_--->
+  <!--Banner Section--->
   <section id="banner">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <p class="text-uppercase promo-title">software applications company</p>
+        <div class="col-md-6 " >
+          <p class="text-uppercase promo-title wow bounce">software applications company</p>
           <p>WiCode from web to mobile applications, we are the experts. Software solutions at your fingetips</p>
           <a href="#"><i class="far fa-play-circle"></i><span>View Recent Projects</span></a>
         </div>
@@ -116,225 +115,195 @@
     <div class="container text-center">
       <h1 class="text-uppercase title">what we do</h1>
       <div class="row">
-
-        <div class="card-deck">
-          <div class="card shadow-md">
+        <div class="card">
+          <img class="card-img-top" src="https://lh3.googleusercontent.com/RlJHg3w7ZQyEZ8IR_RXUdljPZ-622EgmIdDML-OcegdrlcX5f5HC_JkaBZ34l5Oj4NPsM-qTZimtBwhGUyAqrN5eueq7wMKOfPnOR8gwjv-UkMn4C9wGFrfGrCnsep8vGixwKq7v5A=w1920-h1080" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title text-muted">WEB DESIGN & DEVELOPMENT</h5>
+            <p>Why develop web applications in the cloud?<br>
+              Web or cloud-based applications, are easier to maintain than traditional software, as your customers
+              don’t need to concern themselves with updating & maintaining the software.
+              Cloud based software is also more accessible..</p>
+            <!--<a href="#" class="btn btn-primary">See Profile-->
+          </div>
+        </div>
+        
+          <div class="card"  > 
+            <img class="card-img-top" src="https://lh3.googleusercontent.com/O2kacig0t8sIh4besg3p6W-YJH3nvTBNWGIAF8-LSUEskDAbwIwDArjoiXsWy2Cl-Dhvg318GI7K-zpfFTyyrvqkhVedW9dOz6syGtyf-if-fTrdp5HcuAhjqs98-3Tadyu7x6kF-Q=w1920-h1080" alt="Card image">
             <div class="card-body">
-              <h3 class="card-title"><b>Web Design & Development</b></h3><br>
-              <p class="text-secondary text-left">Why develop web applications in the cloud?<br>
-                Web or cloud-based applications, are easier to maintain than traditional software, as your customers
-                don’t need to concern themselves with updating & maintaining the software.
-                Cloud based software is also more accessible, as the
-
-              </p>
-              <div id="web collapse" class="collapse">
-                <p class="text-secondary text-left">
-                  customer only requires a recent browser to run the
-                  software, and data is all saved and backed-up online.
-                  Web applications are also usually much more cost effective to develop, using
-                  open-source web frameworks.
-                  Features of our web applications: Fast HTML5 front-end technology, ensuring a super-fast user
-                  friendly experience for the customer
-                  Full customisation of the front-end customer facing area
-                  Easy to use back-end, with all items content managed
-                  Role-based admin backend with approval of content items, and user administration area
-                  Analytics panels
-                  API to ensure the backend data can be used on other software (Such as Android or iOS apps) </p>
-              </div>
-              <button type="submit" data-toggle="collapse" data-target="#web collapse" class="btn-text btn btn-primary collapsed "
-                aria-expanded="false"><span>More info...</span><b>Less info</b></button>
-
+                <h5 class="card-title text-muted">AR & VR Development</h5>
+                <p>Augmented reality holds immense potential to create ground-breaking
+                    experiences in gaming
+    
+                    and entertainment. As an AR game development company with vast experience in reality technologies,
+                    Wicode designs and develops fun and exciting AR games for mobile, smart glasses and headsets. <br>etc...</p>
+              <!--<a href="#" class="btn btn-primary">See More</a>-->
             </div>
-
           </div>
-          <div class="card ">
-            <div class="card-body shadow-md">
-              <h3 class="card-title"><b>AR and VR Development</b></h3><br>
-
-              <p class="text-secondary text-left"> Augmented reality holds immense potential to create ground-breaking
-                experiences in gaming
-
-                and entertainment. As an AR game development company with vast experience in reality technologies,
-                Wicode designs and develops fun and exciting AR games for mobile, smart glasses and headsets.
-              </p>
-
-              <div id="AR collapsed" class="collapse">
-                <p class="text-secondary text-left">
-                  Our team
-                  of expert AR game developers have experience in creating AR products for various platforms from
-                  simple
-                  geo-location based games for mobile devices to high-end FPSs with smart glasses support.
-                </p>
+            <div class="card" > 
+              <img class="card-img-top" src="https://lh3.googleusercontent.com/PuMuTw3pR4ESzt2pIUmQnBdSdIkzgixAdzYLMOMwyuSY2zrv7bPaxxfm9EcfGvHDNat7y0-V83_KY4gFPcOyjI9UXwmmBdqym9AnvkYLPC7K8SDjoU61O-xZpbUMcPL0u_5p0U2bDQ=w1920-h1080" alt="Card image">
+              <div class="card-body">
+                  <h5 class="card-title text-muted">Games Development</h5>
+                  <p>Mobile gaming is one of the largest generators of revenue in the
+                      video game sector. With the
+                      huge number of devices in the market today, mobile games are easily accessible to a wide
+                      audience. Wicode is a Software solutions/mobile game development company that creates exciting
+                      native etc...</p>
+                <!--<a href="#" class="btn btn-primary">See Profile</a>-->
               </div>
-              <button type="submit" data-toggle="collapse" data-target="#AR collapsed" class="btn-text btn btn-primary collapsed "
-                aria-expanded="false"><span>More info...</span><b>Less info</b></button>
-
-            </div>
-
-          </div>
-          <div class="card shadow-md">
-            <div class="card-body">
-              <h3 class="card-title"><b>Game<br> Development</b></h3><br>
-              <p class="text-secondary text-left">Mobile gaming is one of the largest generators of revenue in the
-                video game sector. With the
-                huge number of devices in the market today, mobile games are easily accessible to a wide
-                audience. Wicode is a Software solutions/mobile game development company that creates exciting
-                native, cross platform & </p>
-
-              <div id="games collapsed" class="collapse">
-                <p class="text-secondary text-left">
-                  hybrid mobile apps and mobile games. Our team includes some of the
-                  best mobile game developers in the field who’ve built engaging casual, social, action, arcade,
-                  trivia, strategy, puzzle, educational, MMO,
-                  RTS,RPG, MMORPG,table, board and card games for various mobile platforms including Android, iOS and
-                  Windows. </p>
-              </div>
-              <button type="submit" data-toggle="collapse" data-target="#games collapsed" class="btn-text btn btn-primary collapsed "
-                aria-expanded="false"><span>More info...</span><b>Less info</b></button>
-
-
-            </div>
-
-          </div>
-        </div>
+              
       </div>
-
     </div>
   </section>
-  <!--About us-->
-  <section id="about-us">
-    <div class="container">
-      <h1 class="title text-center">why choose us</h1>
+
+<!--About us-->
+<section id="about-us">
+  <div class="container">
+    <h1 class="title text-center">why choose us</h1>
+    <div class="row">
+      <div class="col-md-6 about-us">
+        <h3 class="about-title">Why we're different</h3>
+          <b>Experienced</b> - We hire only seasoned, professional developers with at least 5-10 years experience and usually many more. We provide our develops with continuing education opportunities on a regular basis to allow them to stay current with the latest technology. We won’t be sending out warm bodies to train on your dime!
+          <li><b>Business savvy</b> - We design, evaluate and justify technology solutions from a thorough understanding of the business benefit for your company. </li>
+          <li><b>Reputable</b> - Wicode has been around since 2018, a respected leader in the community and the industry. Our proudest accomplishment is the large number of long term clients who year after year put their trust in us. </li>
+          <li>Best-in-class quality of service </li>
+
+          <li> tailor-made solutions unique to you and your business needs </li>
+
+          <li><b>100% Satisfaction Guarantee</b> – We want you to be completely satisfied with our services. We will do whatever it takes to make you happy. No hassles, no problems. </li>
+            
+      
+      </div>
+      <div class="col-md-6">
+        <img src="images/network.png" alt="Web Design & Development WiCode" class="img-fluid">
+        </div>
+      </div>
+  </section>
+
+ 
+  </div>
+</section>
+
+<!---------Meet the Awesome Team---->
+
+<section id="awesome-team">
+  <div class="container">
       <div class="row">
-        <div class="col-md-6 about-us">
-          <h3 class="about-title">Why we're different</h3>
-          <ul>
-            <li><b>Experienced</b> - We hire only seasoned, professional developers with at least 5-10 years experience
-              and usually many more. We provide our develops with continuing education opportunities on a regular basis
-              to allow them to stay current with the latest technology. We won’t be sending out warm bodies to train on
-              your dime! </li>
-            <li><b>Business savvy</b> - We design, evaluate and justify technology solutions from a thorough
-              understanding of the business benefit for your company. </li>
-
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <img src="images/network.png" alt="Web Design & Development WiCode" class="img-fluid">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--------Meet the Awesome Team---->
-
-  <section id="awesome-team">
-    <div class="container">
-      <h1 class="title text-center">Our professionals</h1>
-      <div class="row">
-        <div class="col-md-4 col-sm-4 ">
-          <div class="team-member">
-            <div class="team-img">
-              <img src="images/kagiso CEO.jpg" alt="team member" class="img-responsive">
-            </div>
-            <div class="team-hover">
-              <div class="desk">
-                <h4>Hi There !</h4>
-                <p>I've been a software engineer, a novelist, a journalist, and a manager - and managing developers is
-                  easily the trickiest thing I've ever done.
-                </p>
+          <div class="col-md-12 col-sm-12 heading-title text-center">
+              <h1 class="title text-center">our professionals</h1>
+              <p class="half-txt">Our awesome multi talent team of specialists</p>
+          </div>
+          <div class="col-md-4 col-sm-4">
+              <div class="team-member">
+                  <div class="team-img">
+                      <img src="https://lh3.googleusercontent.com/9zsH8nMaMofqsXV3eGVX8kZhEX4UnLZGJqOzUTFv64U6YKtt3gkYkifmiW3tVYgHwVDSgMcI5WJm0WNRa6AZchbQb1twub8F5B1q-fOHEKNOxplaqzQL6VzI4IdIcGXQ0X__Hx_7hQ=w2400" alt="team member" class="img-responsive">
+                  </div>
+                  <div class="team-hover">
+                      <div class="desk">
+                          <h4>Suprise</h4>
+                          <p> There is nothing here</p>
+                      </div>
+                      <div class="s-link">
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                          <a href="https://www.linkedin.com/in/kagiso-nyokolodi-01859868"><i class="fab fa-linkedin"></i></a>
+                          <a href="https://plus.google.com/107770784805663030555"><i class="fab fa-google-plus"></i></a>
+                      </div>
+                  </div>
               </div>
-
-            </div>
-          </div>
-          <div class="team-title text-center">
-            <h5>Kagiso Nyokolodi</h5>
-            <span>Lead Developer </span>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-4">
-          <div class="team-member">
-            <div class="team-img">
-              <img src="images/Letlhogonolo.jpg" alt="team member" class="img-responsive">
-            </div>
-            <div class="team-hover">
-              <div class="desk">
-                <p>“You are a computer. If you become front-end you'll count the likes on social media. If you become
-                  back-end you'll be breathing deep on a mountain. Listen! one life man. Become a Full-stack.”</p>
-
+              <div class="team-title">
+                  <h5>NYOKOLODI KAGISO</h5>
+                  <span>Lead Developer</span>
               </div>
-
-            </div>
           </div>
-          <div class="team-title text-center">
-            <h5>Letlhogonolo Mokoena</h5>
-            <span>Senior Developer </span>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-4">
-          <div class="team-member">
-            <div class="team-img">
-              <img src="images/melvin.jpg" alt="team member" class="img-responsive">
-            </div>
-            <div class="team-hover">
-              <div class="desk">
-                <h4>I love PHP</h4>
-                <p>PHP is about as exciting as your toothbrush. You use it every day, it does the job, it is a simple
-                  tool, so what? Who would want to read about toothbrushes?</p>
+          <div class="col-md-4 col-sm-4">
+              <div class="team-member">
+                  <div class="team-img">
+                      <img src="https://lh3.googleusercontent.com/tLhT-ZbiTLnpUiwNwooq3R6MjSrZDYTTgzGEgYkqvkVZeCJYQZjIfAPDYtDHB8HKML_5GgOnSXjjhF-6dfLPbHj5lMGdhFNKF-NouqjwwcGFINMfKFXDfOEOdc3z9rIINxF4TykYmw=w2400" alt="team member" class="img-responsive">
+                  </div>
+                  <div class="team-hover">
+                      <div class="desk">
+                          <p>Descipline is the best tool.</p>
+                      </div>
+                      <div class="s-link">
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                          <a href="https://www.linkedin.com/in/letlhogonolo-mokoena-18b59b84"><i class="fab fa-linkedin"></i></a>
+                          <a href="plus.google.com/+letlhogonolomokoena"><i class="fab fa-google-plus"></i></a>
+                      </div>
+                  </div>
               </div>
-
-            </div>
+              <div class="team-title">
+                  <h5>LETLHOGONOLO MOKOENA</h5>
+                  <span>Senior Developer</span>
+              </div>
           </div>
-          <div class="team-title text-center">
-            <h5>Melvin More</h5>
-            <span>Senior Developer </span>
+          <div class="col-md-4 col-sm-4">
+              <div class="team-member">
+                  <div class="team-img">
+                      <img src="https://lh5.googleusercontent.com/HMQKxe5EHoeI6KcSBGGebqqY_fzq909ara3YYxkJo5Zh_9sUnKOXCiazczA=w2400" alt="Wicode software developemt, web development" class="img-responsive">
+                  </div>
+                  <div class="team-hover">
+                      <div class="desk">
+                          <p>I am a hard-core dev</p>
+                      </div>
+                      <div class="s-link">
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                          <a href="https://www.linkedin.com/in/melvin-more-b43731145"><i class="fab fa-linkedin"></i></a>
+                          <a href="https://plus.google.com/+MELVINMORE"><i class="fab fa-google-plus"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="team-title">
+                  <h5>MELVIN MORE</h5>
+                  <span>Senior Developer</span>
+              </div>
           </div>
-        </div>
 
       </div>
-    </div>
-  </section>
 
-  <!--testimonials section-->
-  <section id="testimonials">
-    <div class="container">
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
       <h1 class="title text-center">what clients say</h1>
       <div class="row">
-        <div class="col-md-6 testimonials">
-          <p>I’ve had some questionable experiences with other web agencies in the past, but Wicode has hands down been
-            the best web company we’ve worked with, providing us with peace of mind and incredible service</p>
-          <img src="images/frog.jpg" alt="Web Design & Development WiCode">
-          <p class="user-details">
-            <b>Peter Jackson</b><br>
-            <span class="text-secondary">Manager at ITGurus</span>
-          </p>
+      <figure class="snip1192">
+          <blockquote>Calvin: I’ve had some questionable experiences with other web agencies in the past, but Wicode has hands down been the best web company we’ve worked with, providing us with peace of mind and incredible service. </blockquote>
+          <div class="author">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1"/>
+            <h5>Pelican Steve <span> ITGurus</span></h5>
+          </div>
+        </figure>
+        <figure class="snip1192 hover">
+          <blockquote>We've been blown away by the incredible value you deliver, and how your work has translated into increased page view times, lead generations, and dramatic decreases in bounce rate and required support</blockquote>
+          <div class="author">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample24.jpg" alt="sq-sample24"/>
+            <h5>Max Conversion<span> RedSoul</span></h5>
+          </div>
+        </figure>
+        <figure class="snip1192">
+          <blockquote>I’d like to thank the team at Wicode Studios for developing such a fantastic platform for interaction with our customers. We achieved a phenomenal success in this initiative. Thanks you again</blockquote>
+          <div class="author">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample29.jpg" alt="sq-sample29"/>
+            <h5>Eleanor Faint<span> Bakwa Solutions</span></h5>
+          </div>
+        </figure>
         </div>
-        <div class="col-md-6 testimonials">
-          <p>We've been blown away by the incredible value you deliver, and how your work has translated into increased
-            page view times, lead generations, and dramatic decreases in bounce rate and required support.</p>
-          <img src="images/frog.jpg" alt="Web Design & Development WiCode">
-          <p class="user-details">
-            <b>Thandi Ndlovu</b><br>
-            <span class="text-secondary">Director at Classina Solutions</span>
-          </p>
-        </div>
-      </div>
     </div>
   </section>
-
-
+<!---------Social Media---------------->
 
   <section id="social-media">
     <div class="container text-center title">
       <h1>FIND US ON SOCIAL MEDIA</h1>
       <div class="social-icons">
-        <a href="#"> <img src="images/social media icons/facebook-icons.png"></a>
-        <a href="#"> <img src="images/social media icons/linkedin-icons.png"></a>
-        <a href="#"> <img src="images/social media icons/google-icons.png"></a>
+        <a href="#"><i class="fab fa-facebook-square wow zoomIn"></i></a>
+        <a href="#"><i class="fab fa-linkedin wow zoomIn"></i></a>
+        <a href="#"><i class="fab fa-google-plus-square wow zoomIn"></i></a>
       </div>
     </div>
   </section>
+
+  
 
   <!--Footer section-->
   <footer id="footer">
@@ -348,14 +317,14 @@
           <p class="text-uppercase"><b>contact us</b></p>
           <p><i class="fas fa-map-marker-alt"></i> 272 The Village Centurion</p>
           <p><i class="fas fa-phone"></i> +27 67 175 6858</p>
-          <p><i class="fas fa-envelope"></i> admin@wicode.co.za</p>
+          <p><i class="fas fa-envelope"></i> info@wicodeit.co.za</p>
         </div>
         <div class="col-md-4 footer-box">
           <p class="text-uppercase"><b>subscribe newsletter</b></p>
-          <input type="email" class="form-control" placeholder="example@email.com">
+          <input type="email" class="form-control" placeholder="Email">
           <button class="btn btn-primary">Subscribe</button>
         </div>
-      </div>
+     </div>
       <div>
         <hr>
         <p class="text-center">© 2019 WiCode. All Rights Reserved</p>
@@ -363,11 +332,10 @@
     </div>
   </footer>
 </body>
-
 <!---------Smooth Scroll---------------->
 <script src="smooth-scroll.js"></script>
 <script>
   var scroll = new SmoothScroll('a[href*="#"]');
 </script>
-
+<!---->
 </html>
