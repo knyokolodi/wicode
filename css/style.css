@@ -366,8 +366,6 @@ figure.snip1192 .author h5 span {
   display: block;
 }
 
-=======
-
 .btn-text b{display:inline}
 .btn-text:not(.collapsed)  span{display:none}
 .btn-text.collapsed b {display:none}
